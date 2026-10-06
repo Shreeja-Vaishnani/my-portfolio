@@ -1,14 +1,15 @@
 /* ── Tokens ─────────────────────────────────────────────── */
 .App {
-  --ink: #1a0533;
-  --muted: #7c6b8a;
-  --accent: #8b2fc9;
-  --accent-dark: #6a1fa0;
-  --accent2: #e8445a;
-  --line: #ecdff5;
-  --paper: #faf7ff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --accent: #0f9c9a;
+  --accent-rgb: 15, 156, 154;
+  --accent-dark: #087f7e;
+  --accent2: #0f766e;
+  --line: #dbe7ef;
+  --paper: #f8fafc;
   --card: #ffffff;
-  --shadow: 0 8px 32px rgba(139, 47, 201, 0.1);
+  --shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
   min-height: 100vh;
   background: var(--paper);
   color: var(--ink);
@@ -16,14 +17,15 @@
 }
 
 .App.dark {
-  --ink: #f0e8ff;
-  --muted: #a892be;
-  --accent: #b06ee8;
-  --accent-dark: #9050d0;
-  --accent2: #f0607a;
-  --line: #2a1640;
-  --paper: #0e0818;
-  --card: #180d28;
+  --ink: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-rgb: 45, 212, 191;
+  --accent-dark: #14b8a6;
+  --accent2: #5eead4;
+  --line: #1e293b;
+  --paper: #0b1220;
+  --card: #111c2d;
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
@@ -382,7 +384,7 @@ h1 {
   display: inline-block;
   padding: 3px 10px;
   border-radius: 20px;
-  background: rgba(139, 47, 201, 0.1);
+  background: rgba(var(--accent-rgb), 0.1);
   color: var(--accent);
   font-size: 11px;
   font-weight: 700;
@@ -462,7 +464,7 @@ h1 {
 .tag-list span {
   padding: 5px 10px;
   border-radius: 4px;
-  background: rgba(139, 47, 201, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--accent);
   font-size: 12px;
   font-weight: 600;
@@ -582,7 +584,7 @@ h1 {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(139, 47, 201, 0.12);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.12);
 }
 
 .contact-form input::placeholder,
@@ -642,7 +644,7 @@ h1 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(139, 47, 201, 0.1);
+  background: rgba(var(--accent-rgb), 0.1);
   color: var(--accent);
   font-size: 24px;
   font-weight: 700;
